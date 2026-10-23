@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "damagehud",
+  "version": "${version}",
+  "name": "DamageHUD",
+  "description": "Shows estimated melee damage against the player under your crosshair.",
+  "authors": ["OpenAI"],
+  "environment": "client",
+  "entrypoints": { "client": ["com.example.damagehud.DamageHudClient"] },
+  "mixins": ["damagehud.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
